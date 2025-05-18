@@ -2,13 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "   ",
-    "ttt",
+    "sct",
     "   "
   ],
   "key": {
     "t": { "item": "minecraft:torch" },
-    "c": { "item": "minecraft:torch" },
-    "s": { "item": "minecraft:torch" }
+    "c": { "item": "minecraft:cobblestone" },
+    "s": { "item": "minecraft:string" }
   },
   "result": {
     "id": "helloworld:hello_gem",

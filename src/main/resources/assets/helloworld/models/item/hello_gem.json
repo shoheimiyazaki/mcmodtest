@@ -1,6 +1,42 @@
 {
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "helloworld:item/hello_gem"
-  }
+	"parent": "helloworld:block/hello_gem",
+	"textures": {
+		"layer0": "helloworld:item/hello_gem"
+	},
+	"elements": [
+		{
+			"from": [7, 2, 7],
+			"to":   [9,11, 9],
+			"rotation": {
+				"angle":  0,
+				"axis":  "y",
+				"origin":[7, 0, 7]
+			},
+			"faces": {
+				"north": { "uv": [0, 0, 2, 9], "texture": "#layer0" },
+				"east":  { "uv": [2, 0, 4, 9], "texture": "#layer0" },
+				"south": { "uv": [4, 0, 6, 9], "texture": "#layer0" },
+				"west":  { "uv": [6, 0, 8, 9], "texture": "#layer0" },
+				"up":    { "uv": [8, 0,10, 2], "texture": "#layer0" },
+				"down":  { "uv": [8, 2,10, 4], "texture": "#layer0" }
+			}
+		},
+		{
+			"from": [7.5, -4, 7.5],
+			"to":   [8.25, 3, 8.25],
+			"rotation": {
+				"angle":  0,
+				"axis":   "y",
+				"origin": [6.5,-1, 7.5]
+			},
+			"faces": {
+				"north": { "uv": [8, 2,10, 4], "texture": "#layer0" },
+				"east":  { "uv": [8, 2,10, 4], "texture": "#layer0" },
+				"south": { "uv": [8, 2,10, 4], "texture": "#layer0" },
+				"west":  { "uv": [8, 2,10, 4], "texture": "#layer0" },
+				"up":    { "uv": [0, 0, 2, 2], "texture": "#layer0" },
+				"down":  { "uv": [0, 0, 2, 2], "texture": "#layer0" }
+			}
+		}
+	]
 }
