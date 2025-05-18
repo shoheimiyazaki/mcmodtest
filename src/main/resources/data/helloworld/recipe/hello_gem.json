@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "ttt",
+    "   "
+  ],
+  "key": {
+    "t": { "item": "minecraft:torch" },
+    "c": { "item": "minecraft:torch" },
+    "s": { "item": "minecraft:torch" }
+  },
+  "result": {
+    "id": "helloworld:hello_gem",
+    "count": 3
+  },
+  "criteria": {
+    "has_torch": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "item": "minecraft:torch" }
+        ]
+      }
+    }
+  }
+}

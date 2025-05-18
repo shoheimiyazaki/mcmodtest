@@ -12,10 +12,10 @@ import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.entity.ProjectileImpactEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 @Mod(HelloWorldMod.MODID)
 public class HelloWorldMod {
@@ -34,6 +34,8 @@ public class HelloWorldMod {
         System.out.println("Hello World Mod Loaded!");
         // DeferredRegister をモッドイベントバスに登録
         ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        //ITEMS.register(EventBuses.getModEventBus(MODID));
+
     }
 
     // ── クライアント専用イベント ─────────────────────────────────
